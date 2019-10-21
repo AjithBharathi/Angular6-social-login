@@ -1,0 +1,13 @@
+<h1>
+  Sign in
+</h1>
+
+<button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
+<button (click)="socialSignIn('google')">Sign in with Google</button>
+
+
+<div *ngIf="data">
+  <img [src]="data.image">
+  <h3>name: {{data.name}}</h3>
+  <p>e-mail: {{data.email}}</p>
+</div>
